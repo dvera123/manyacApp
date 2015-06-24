@@ -1,0 +1,1044 @@
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-19 14:14:50 -0600
+
+Gem::LoadError (Specified 'sqlite3' for database adapter, but the gem is not loaded. Add `gem 'sqlite3'` to your Gemfile (and ensure its version is at the minimum required by ActiveRecord).):
+  activerecord (4.2.2) lib/active_record/connection_adapters/connection_specification.rb:177:in `rescue in spec'
+  activerecord (4.2.2) lib/active_record/connection_adapters/connection_specification.rb:174:in `spec'
+  activerecord (4.2.2) lib/active_record/connection_handling.rb:50:in `establish_connection'
+  activerecord (4.2.2) lib/active_record/railtie.rb:120:in `block (2 levels) in <class:Railtie>'
+  activesupport (4.2.2) lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+  activesupport (4.2.2) lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+  activesupport (4.2.2) lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+  activesupport (4.2.2) lib/active_support/lazy_load_hooks.rb:44:in `each'
+  activesupport (4.2.2) lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+  activerecord (4.2.2) lib/active_record/base.rb:316:in `<module:ActiveRecord>'
+  activerecord (4.2.2) lib/active_record/base.rb:26:in `<top (required)>'
+  activerecord (4.2.2) lib/active_record/migration.rb:384:in `connection'
+  activerecord (4.2.2) lib/active_record/migration.rb:371:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (16.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (11.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (63.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-19 14:16:18 -0600
+
+Mysql2::Error (Access denied for user 'root'@'localhost' (using password: NO)):
+  mysql2 (0.3.18) lib/mysql2/client.rb:70:in `connect'
+  mysql2 (0.3.18) lib/mysql2/client.rb:70:in `initialize'
+  activerecord (4.2.2) lib/active_record/connection_adapters/mysql2_adapter.rb:18:in `new'
+  activerecord (4.2.2) lib/active_record/connection_adapters/mysql2_adapter.rb:18:in `mysql2_connection'
+  activerecord (4.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /usr/local/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /usr/local/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:567:in `retrieve_connection'
+  activerecord (4.2.2) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.2) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.2) lib/active_record/migration.rb:384:in `connection'
+  activerecord (4.2.2) lib/active_record/migration.rb:371:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (52.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (11.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (26.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-19 14:18:29 -0600
+
+Mysql2::Error (Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)):
+  mysql2 (0.3.18) lib/mysql2/client.rb:70:in `connect'
+  mysql2 (0.3.18) lib/mysql2/client.rb:70:in `initialize'
+  activerecord (4.2.2) lib/active_record/connection_adapters/mysql2_adapter.rb:18:in `new'
+  activerecord (4.2.2) lib/active_record/connection_adapters/mysql2_adapter.rb:18:in `mysql2_connection'
+  activerecord (4.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /usr/local/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /usr/local/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:567:in `retrieve_connection'
+  activerecord (4.2.2) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.2) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.2) lib/active_record/migration.rb:384:in `connection'
+  activerecord (4.2.2) lib/active_record/migration.rb:371:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (61.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (13.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (27.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-19 14:19:26 -0600
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/railties-4.2.2/lib/rails/templates/rails/welcome/index.html.erb (1.0ms)
+Completed 200 OK in 13ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user" for 127.0.0.1 at 2015-06-19 14:48:38 -0600
+
+ActionController::RoutingError (No route matches [GET] "/user"):
+  actionpack (4.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (37.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (18.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (360.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (461.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (11.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (23.1ms)
+
+
+Started GET "/user" for 127.0.0.1 at 2015-06-19 14:51:28 -0600
+
+ActionController::RoutingError (No route matches [GET] "/user"):
+  actionpack (4.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (35.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (59.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (11.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (23.9ms)
+
+
+Started GET "/user" for 127.0.0.1 at 2015-06-19 14:51:32 -0600
+
+ActionController::RoutingError (No route matches [GET] "/user"):
+  actionpack (4.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (14.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (10.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (21.7ms)
+
+
+Started GET "/profile/user" for 127.0.0.1 at 2015-06-19 15:04:20 -0600
+Processing by ProfileController#user as HTML
+  Rendered profile/user.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 1863ms (Views: 1856.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/profile.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-19 15:04:22 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-06-19 15:04:22 -0600
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-06-19 15:04:22 -0600
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-06-19 15:04:22 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-06-19 15:04:22 -0600
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-06-19 15:04:22 -0600
+
+
+Started GET "/assets/profile.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-19 15:04:22 -0600
+
+
+Started GET "/profile/user" for 127.0.0.1 at 2015-06-19 15:45:38 -0600
+Processing by ProfileController#user as HTML
+  Rendered profile/user.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 1442ms (Views: 1398.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/profile.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-19 15:45:43 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-06-19 15:45:43 -0600
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-06-19 15:45:43 -0600
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-06-19 15:45:43 -0600
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-06-19 15:45:43 -0600
+
+
+Started GET "/assets/profile.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-19 15:45:43 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-06-19 15:45:43 -0600
+
+
+Started GET "/profile/user" for 127.0.0.1 at 2015-06-19 15:45:45 -0600
+Processing by ProfileController#user as HTML
+  Rendered profile/user.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/profile.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-19 15:45:45 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-06-19 15:45:45 -0600
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-06-19 15:45:45 -0600
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-06-19 15:45:45 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-06-19 15:45:45 -0600
+
+
+Started GET "/assets/profile.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-19 15:45:45 -0600
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-06-19 15:45:45 -0600
+
+
+Started GET "/profile/user" for 127.0.0.1 at 2015-06-19 15:45:47 -0600
+Processing by ProfileController#user as HTML
+  Rendered profile/user.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 23ms (Views: 22.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-06-19 15:45:47 -0600
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-06-19 15:45:47 -0600
+
+
+Started GET "/assets/profile.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-19 15:45:47 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-06-19 15:45:47 -0600
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-06-19 15:45:47 -0600
+
+
+Started GET "/assets/profile.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-06-19 15:45:47 -0600
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-06-19 15:45:47 -0600
+  [1m[36m (186.6ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (524.6ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.5ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'maniac'
+  AND fk.table_name = 'menu'
+
+  [1m[36m (0.3ms)[0m  [1mSHOW CREATE TABLE `menu`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateMenus (20150619224627)
+  [1m[35m (184.1ms)[0m  CREATE TABLE `menus` (`id` int(11) auto_increment PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (28.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150619224627')
+  [1m[36m (64.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.4ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'maniac'
+  AND fk.table_name = 'menu'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `menu`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'maniac'
+  AND fk.table_name = 'menus'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `menus`
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'maniac'
+  AND fk.table_name = 'menus'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `menus`
+  [1m[36m (203.8ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (299.5ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateMenus (20150619224627)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateMenus (20150619224627)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateMenus (20150619224627)
+  [1m[35m (192.0ms)[0m  CREATE TABLE `menus` (`id` int(11) auto_increment PRIMARY KEY, `menu_id` int(11), `menu_name` varchar(255), `menu_description` text, `menu_access_id` int(11), `published_at` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150619224627')
+  [1m[36m (33.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'maniac'
+  AND fk.table_name = 'menus'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `menus`
+  [1m[36m (165.9ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (288.3ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateMenus (20150619224627)
+  [1m[35m (157.6ms)[0m  CREATE TABLE `menus` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `description` text, `access_id` int(11), `published_at` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150619224627')
+  [1m[36m (33.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.5ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'maniac'
+  AND fk.table_name = 'menus'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `menus`
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-21 07:28:16 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/railties-4.2.2/lib/rails/templates/rails/welcome/index.html.erb (15.7ms)
+Completed 200 OK in 100ms (Views: 81.1ms | ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to AddTypeToMenus (20150621133541)
+  [1m[35m (213.4ms)[0m  ALTER TABLE `menus` ADD `type` varchar(255)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150621133541')
+  [1m[36m (45.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.5ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'maniac'
+  AND fk.table_name = 'menus'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `menus`
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.4ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'maniac'
+  AND fk.table_name = 'menus'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `menus`
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (43.8ms)[0m  INSERT INTO `menus` (`name`, `description`, `access_id`, `created_at`, `updated_at`) VALUES ('Home', 'home menu', 777, '2015-06-22 03:19:09', '2015-06-22 03:19:09')
+  [1m[36m (48.8ms)[0m  [1mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateStuffTable (20150622133541)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateStuffTable (20150622133541)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateManyacItems (20150622133541)
+  [1m[35m (204.1ms)[0m  CREATE TABLE `manyac_items` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `description` text, `maniac_id` int(11), `published_at` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150622133541')
+  [1m[36m (37.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.5ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'maniac'
+  AND fk.table_name = 'manyac_items'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `manyac_items`
+  [1m[36m (0.4ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'maniac'
+  AND fk.table_name = 'menus'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `menus`
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateManyacItems (20150622135856)
+  [1m[35m (128.6ms)[0m  CREATE TABLE `manyac_items` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `description` text, `maniac_id` int(11), `published_at` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150622135856')
+  [1m[36m (37.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.5ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'maniac'
+  AND fk.table_name = 'manyac_items'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `manyac_items`
+  [1m[36m (0.4ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'maniac'
+  AND fk.table_name = 'menus'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `menus`
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `menus` (`name`, `description`, `access_id`, `created_at`, `updated_at`) VALUES ('settings', 'menu item', 777, '2015-06-22 14:33:42', '2015-06-22 14:33:42')
+  [1m[36m (112.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (49.5ms)[0m  SELECT COUNT(*) FROM `menus`
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (20.7ms)[0m  UPDATE `menus` SET `name` = 'tools', `updated_at` = '2015-06-22 14:36:10' WHERE `menus`.`id` = 2
+  [1m[36m (139.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `menus` (`name`, `description`, `access_id`, `published_at`, `created_at`, `updated_at`) VALUES ('profile', 'menu item', 777, '2015-06-22 00:00:00', '2015-06-22 14:42:46', '2015-06-22 14:42:46')[0m
+  [1m[35m (43.7ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `menus` (`name`, `description`, `access_id`, `created_at`, `updated_at`) VALUES ('Manyac Stuff', 'menu item', 777, '2015-06-22 15:03:47', '2015-06-22 15:03:47')
+  [1m[36m (63.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mMenu Load (112.0ms)[0m  SELECT  `menus`.* FROM `menus` WHERE `menus`.`id` = 1 LIMIT 1
+  [1m[36mMenu Load (0.6ms)[0m  [1mSELECT  `menus`.* FROM `menus` WHERE `menus`.`id` = 4 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (66.0ms)[0m  [1mUPDATE `menus` SET `description` = 'menu item react', `updated_at` = '2015-06-22 16:33:02' WHERE `menus`.`id` = 4[0m
+  [1m[35m (78.7ms)[0m  COMMIT
+  [1m[36mMenu Load (0.5ms)[0m  [1mSELECT  `menus`.* FROM `menus` WHERE `menus`.`id` = 47 LIMIT 1[0m
+  [1m[35mMenu Load (0.6ms)[0m  SELECT  `menus`.* FROM `menus`  ORDER BY `menus`.`id` ASC LIMIT 1
+  [1m[36mMenu Load (0.3ms)[0m  [1mSELECT  `menus`.* FROM `menus`  ORDER BY `menus`.`id` ASC LIMIT 1[0m
+  [1m[35mMenu Load (0.3ms)[0m  SELECT  `menus`.* FROM `menus`  ORDER BY `menus`.`id` ASC LIMIT 1
+  [1m[36mMenu Load (0.3ms)[0m  [1mSELECT  `menus`.* FROM `menus`  ORDER BY `menus`.`id` ASC LIMIT 1[0m
+  [1m[35mMenu Load (0.5ms)[0m  SELECT  `menus`.* FROM `menus`  ORDER BY `menus`.`id` DESC LIMIT 1
+  [1m[36mMenu Load (0.6ms)[0m  [1mSELECT `menus`.* FROM `menus`[0m
+  [1m[35mMenu Load (0.2ms)[0m  SELECT `menus`.* FROM `menus`
+  [1m[36mMenu Load (0.3ms)[0m  [1mSELECT  `menus`.* FROM `menus`  ORDER BY `menus`.`id` ASC LIMIT 1[0m
+  [1m[35mMenu Load (21.5ms)[0m  SELECT `menus`.* FROM `menus`  ORDER BY description
+  [1m[36mMenu Load (21.3ms)[0m  [1mSELECT `menus`.* FROM `menus`  ORDER BY published_at[0m
+  [1m[35mMenu Load (0.5ms)[0m  SELECT `menus`.* FROM `menus` WHERE `menus`.`id` = 1
+  [1m[36mMenu Load (0.5ms)[0m  [1mSELECT `menus`.* FROM `menus` WHERE `menus`.`id` = 3[0m
+  [1m[35mMenu Load (21.7ms)[0m  SELECT `menus`.* FROM `menus` WHERE `menus`.`description` = 'home menu'
+  [1m[36mSQL (164.2ms)[0m  [1mDELETE FROM `menus` WHERE `menus`.`id` = 4[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[36mMenu Load (34.8ms)[0m  [1mSELECT `menus`.* FROM `menus`[0m
+  [1m[35mMenu Load (0.5ms)[0m  SELECT  `menus`.* FROM `menus` WHERE `menus`.`id` = 1 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM `menus` WHERE `menus`.`id` = 1
+  [1m[36m (43.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mMenu Load (0.5ms)[0m  SELECT  `menus`.* FROM `menus`  ORDER BY `menus`.`id` ASC LIMIT 1
+  [1m[36mMenu Load (0.5ms)[0m  [1mSELECT `menus`.* FROM `menus`[0m
+  [1m[35mMenu Load (32.4ms)[0m  SELECT `menus`.* FROM `menus` WHERE `menus`.`id` IN (1, 2)
+  [1m[36mMenu Load (0.3ms)[0m  [1mSELECT `menus`.* FROM `menus`[0m
+  [1m[35mMenu Load (0.6ms)[0m  SELECT `menus`.* FROM `menus` WHERE `menus`.`id` IN (1, 3)
+  [1m[36mMenu Load (0.5ms)[0m  [1mSELECT  `menus`.* FROM `menus` WHERE `menus`.`id` = 1 LIMIT 1[0m
+  [1m[35mMenu Load (0.6ms)[0m  SELECT `menus`.* FROM `menus` WHERE `menus`.`id` IN (2, 3)
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (34.0ms)[0m  INSERT INTO `menus` (`name`, `created_at`, `updated_at`) VALUES ('Home', '2015-06-22 20:39:27', '2015-06-22 20:39:27')
+  [1m[36m (45.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mMenu Load (0.5ms)[0m  [1mSELECT `menus`.* FROM `menus`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateSubMenus (20150622225806)
+  [1m[35m (461.9ms)[0m  CREATE TABLE `sub_menus` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150622225806')
+  [1m[36m (50.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.4ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'maniac'
+  AND fk.table_name = 'manyac_items'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `manyac_items`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'maniac'
+  AND fk.table_name = 'menus'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `menus`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'maniac'
+  AND fk.table_name = 'sub_menus'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `sub_menus`
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'maniac'
+  AND fk.table_name = 'manyac_items'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `manyac_items`
+  [1m[36m (0.4ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'maniac'
+  AND fk.table_name = 'menus'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `menus`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'maniac'
+  AND fk.table_name = 'sub_menus'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `sub_menus`
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.5ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'maniac'
+  AND fk.table_name = 'manyac_items'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `manyac_items`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'maniac'
+  AND fk.table_name = 'menus'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `menus`
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'maniac'
+  AND fk.table_name = 'manyac_items'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `manyac_items`
+  [1m[36m (0.4ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'maniac'
+  AND fk.table_name = 'menus'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `menus`
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+Migrating to CreateSubMenus (20150622225806)
+  [1m[36m (35.2ms)[0m  [1mDROP TABLE `sub_menus`[0m
+Mysql2::Error: Unknown table 'sub_menus': DROP TABLE `sub_menus`
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateSubMenus (20150622225807)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateSubMenus (20150622225807)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateSubMenus (20150622225807)
+  [1m[35m (127.7ms)[0m  CREATE TABLE `sub_menus` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `menu_id` int(11), `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150622225807')
+  [1m[36m (36.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.4ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'maniac'
+  AND fk.table_name = 'manyac_items'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `manyac_items`
+  [1m[36m (0.4ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'maniac'
+  AND fk.table_name = 'menus'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `menus`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'maniac'
+  AND fk.table_name = 'sub_menus'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `sub_menus`
+  [1m[36mMenu Load (0.6ms)[0m  [1mSELECT  `menus`.* FROM `menus`  ORDER BY `menus`.`id` ASC LIMIT 1[0m
+  [1m[35mSubMenu Load (0.4ms)[0m  SELECT `sub_menus`.* FROM `sub_menus` WHERE `sub_menus`.`menu_id` = 2
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `sub_menus` (`name`, `created_at`, `updated_at`) VALUES ('inventory', '2015-06-22 23:16:07', '2015-06-22 23:16:07')
+  [1m[36m (31.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE `sub_menus` SET `menu_id` = 2, `updated_at` = '2015-06-22 23:17:23' WHERE `sub_menus`.`id` = 1[0m
+  [1m[35m (77.4ms)[0m  COMMIT
+  [1m[36mMenu Load (0.2ms)[0m  [1mSELECT  `menus`.* FROM `menus`  ORDER BY `menus`.`id` ASC LIMIT 1[0m
+  [1m[35mSubMenu Load (0.5ms)[0m  SELECT `sub_menus`.* FROM `sub_menus` WHERE `sub_menus`.`menu_id` = 2
+  [1m[36mSubMenu Load (0.5ms)[0m  [1mSELECT  `sub_menus`.* FROM `sub_menus`  ORDER BY `sub_menus`.`id` ASC LIMIT 1[0m
+  [1m[35mMenu Load (0.5ms)[0m  SELECT  `menus`.* FROM `menus` WHERE `menus`.`id` = 2 LIMIT 1
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateUsers (20150622234513)
+  [1m[35m (139.7ms)[0m  CREATE TABLE `users` (`id` int(11) auto_increment PRIMARY KEY, `email` varchar(255), `password` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150622234513')
+  [1m[36m (38.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.4ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'maniac'
+  AND fk.table_name = 'manyac_items'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `manyac_items`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'maniac'
+  AND fk.table_name = 'menus'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `menus`
+  [1m[36m (0.4ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'maniac'
+  AND fk.table_name = 'sub_menus'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `sub_menus`
+  [1m[36m (0.4ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'maniac'
+  AND fk.table_name = 'users'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `users`
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (137.0ms)[0m  INSERT INTO `menus` (`name`, `created_at`, `updated_at`) VALUES ('lanuage', '2015-06-23 19:36:27', '2015-06-23 19:36:27')
+  [1m[36m (89.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (72.7ms)[0m  [1mINSERT INTO `sub_menus` (`name`, `created_at`, `updated_at`) VALUES ('US', '2015-06-23 19:37:40', '2015-06-23 19:37:40')[0m
+  [1m[35m (60.6ms)[0m  COMMIT
+  [1m[36mMenu Load (0.6ms)[0m  [1mSELECT `menus`.* FROM `menus`[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (30.3ms)[0m  [1mUPDATE `sub_menus` SET `menu_id` = 6, `updated_at` = '2015-06-23 19:38:46' WHERE `sub_menus`.`id` = 2[0m
+  [1m[35m (47.7ms)[0m  COMMIT
+  [1m[36mMenu Load (0.4ms)[0m  [1mSELECT  `menus`.* FROM `menus`  ORDER BY `menus`.`id` DESC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE `menus` SET `access_id` = 777, `updated_at` = '2015-06-23 19:39:25' WHERE `menus`.`id` = 6[0m
+  [1m[35m (42.0ms)[0m  COMMIT
+  [1m[36mSubMenu Load (0.5ms)[0m  [1mSELECT `sub_menus`.* FROM `sub_menus` WHERE `sub_menus`.`menu_id` = 6[0m
+  [1m[35mMenu Load (0.5ms)[0m  SELECT  `menus`.* FROM `menus`  ORDER BY `menus`.`id` ASC LIMIT 1
+  [1m[36mSubMenu Load (0.5ms)[0m  [1mSELECT `sub_menus`.* FROM `sub_menus` WHERE `sub_menus`.`menu_id` = 2[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35mMenu Load (0.2ms)[0m  SELECT  `menus`.* FROM `menus`  ORDER BY `menus`.`id` ASC LIMIT 1
+  [1m[36mSubMenu Load (0.2ms)[0m  [1mSELECT `sub_menus`.* FROM `sub_menus` WHERE `sub_menus`.`menu_id` = 2[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (91.4ms)[0m  [1mINSERT INTO `sub_menus` (`menu_id`, `name`, `created_at`, `updated_at`) VALUES (2, 'FR', '2015-06-23 19:45:29', '2015-06-23 19:45:29')[0m
+  [1m[35m (102.6ms)[0m  COMMIT
+  [1m[36mSubMenu Load (0.6ms)[0m  [1mSELECT `sub_menus`.* FROM `sub_menus` WHERE `sub_menus`.`menu_id` = 2[0m
+  [1m[35mSubMenu Load (0.6ms)[0m  SELECT `sub_menus`.* FROM `sub_menus` WHERE `sub_menus`.`menu_id` = 2
+  [1m[36mMenu Load (0.6ms)[0m  [1mSELECT `menus`.* FROM `menus`[0m
+  [1m[35mMenu Load (0.6ms)[0m  SELECT  `menus`.* FROM `menus` WHERE `menus`.`id` = 6 LIMIT 1
+  [1m[36mSubMenu Load (0.5ms)[0m  [1mSELECT `sub_menus`.* FROM `sub_menus` WHERE `sub_menus`.`menu_id` = 6[0m
+  [1m[35mMenu Load (0.4ms)[0m  SELECT  `menus`.* FROM `menus`  ORDER BY `menus`.`id` ASC LIMIT 1
+  [1m[36mSubMenu Load (1.1ms)[0m  [1mSELECT `sub_menus`.* FROM `sub_menus` WHERE `sub_menus`.`menu_id` = 2  ORDER BY published_at DESC[0m
+Mysql2::Error: Unknown column 'published_at' in 'order clause': SELECT `sub_menus`.* FROM `sub_menus` WHERE `sub_menus`.`menu_id` = 2  ORDER BY published_at DESC
+  [1m[35mSubMenu Load (1.2ms)[0m  SELECT `sub_menus`.* FROM `sub_menus` WHERE `sub_menus`.`menu_id` = 2  ORDER BY published_at DESC
+Mysql2::Error: Unknown column 'published_at' in 'order clause': SELECT `sub_menus`.* FROM `sub_menus` WHERE `sub_menus`.`menu_id` = 2  ORDER BY published_at DESC
+  [1m[36mSubMenu Load (0.8ms)[0m  [1mSELECT `sub_menus`.* FROM `sub_menus` WHERE `sub_menus`.`menu_id` = 2  ORDER BY published_at DESC[0m
+Mysql2::Error: Unknown column 'published_at' in 'order clause': SELECT `sub_menus`.* FROM `sub_menus` WHERE `sub_menus`.`menu_id` = 2  ORDER BY published_at DESC
+  [1m[35mSubMenu Load (1.1ms)[0m  SELECT `sub_menus`.* FROM `sub_menus` WHERE `sub_menus`.`menu_id` = 2  ORDER BY published_at DESC
+Mysql2::Error: Unknown column 'published_at' in 'order clause': SELECT `sub_menus`.* FROM `sub_menus` WHERE `sub_menus`.`menu_id` = 2  ORDER BY published_at DESC
+  [1m[36mMenu Load (0.3ms)[0m  [1mSELECT  `menus`.* FROM `menus`  ORDER BY `menus`.`id` ASC LIMIT 1[0m
+  [1m[35mSubMenu Load (32.5ms)[0m  SELECT `sub_menus`.* FROM `sub_menus` WHERE `sub_menus`.`menu_id` = 2  ORDER BY published_at DESC
+Mysql2::Error: Unknown column 'published_at' in 'order clause': SELECT `sub_menus`.* FROM `sub_menus` WHERE `sub_menus`.`menu_id` = 2  ORDER BY published_at DESC
+  [1m[36mSubMenu Load (23.6ms)[0m  [1mSELECT `sub_menus`.* FROM `sub_menus` WHERE `sub_menus`.`menu_id` = 2  ORDER BY published_at DESC[0m
+Mysql2::Error: Unknown column 'published_at' in 'order clause': SELECT `sub_menus`.* FROM `sub_menus` WHERE `sub_menus`.`menu_id` = 2  ORDER BY published_at DESC
+  [1m[36mMenu Load (0.2ms)[0m  [1mSELECT  `menus`.* FROM `menus`  ORDER BY `menus`.`id` ASC LIMIT 1[0m
+  [1m[35mSubMenu Load (0.4ms)[0m  SELECT `sub_menus`.* FROM `sub_menus` WHERE `sub_menus`.`menu_id` = 2  ORDER BY id DESC
+  [1m[36mSubMenu Load (0.2ms)[0m  [1mSELECT `sub_menus`.* FROM `sub_menus` WHERE `sub_menus`.`menu_id` = 2  ORDER BY id DESC[0m
+  [1m[36mMenu Load (0.4ms)[0m  [1mSELECT  `menus`.* FROM `menus`  ORDER BY `menus`.`id` DESC LIMIT 1[0m
+  [1m[35mSubMenu Load (0.4ms)[0m  SELECT `sub_menus`.* FROM `sub_menus` WHERE `sub_menus`.`menu_id` = 6  ORDER BY id ASC
+  [1m[36mMenu Load (0.3ms)[0m  [1mSELECT  `menus`.* FROM `menus`  ORDER BY `menus`.`id` ASC LIMIT 1[0m
+  [1m[35mSubMenu Load (0.1ms)[0m  SELECT `sub_menus`.* FROM `sub_menus` WHERE `sub_menus`.`menu_id` = 2  ORDER BY id DESC
+  [1m[36mMenu Load (0.2ms)[0m  [1mSELECT  `menus`.* FROM `menus`  ORDER BY `menus`.`id` DESC LIMIT 1[0m
+  [1m[35mSubMenu Load (0.6ms)[0m  SELECT `sub_menus`.* FROM `sub_menus` WHERE `sub_menus`.`menu_id` = 6  ORDER BY id DESC
+  [1m[36mMenu Load (0.2ms)[0m  [1mSELECT  `menus`.* FROM `menus`  ORDER BY `menus`.`id` DESC LIMIT 1[0m
+  [1m[35mSubMenu Load (0.2ms)[0m  SELECT `sub_menus`.* FROM `sub_menus` WHERE `sub_menus`.`menu_id` = 6  ORDER BY id DESC
+  [1m[36mSQL (26.3ms)[0m  [1mDELETE FROM `menus` WHERE `menus`.`id` = 6[0m
+  [1m[36mMenu Load (0.5ms)[0m  [1mSELECT `menus`.* FROM `menus`[0m
+  [1m[35mMenu Load (0.6ms)[0m  SELECT  `menus`.* FROM `menus`  ORDER BY `menus`.`id` DESC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSubMenu Load (0.5ms)[0m  SELECT `sub_menus`.* FROM `sub_menus` WHERE `sub_menus`.`menu_id` = 6  ORDER BY id DESC
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM `sub_menus` WHERE `sub_menus`.`id` = 3[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM `sub_menus` WHERE `sub_menus`.`id` = 2
+  [1m[36mSQL (0.7ms)[0m  [1mDELETE FROM `menus` WHERE `menus`.`id` = 6[0m
+  [1m[35m (47.2ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (37.8ms)[0m  [1mINSERT INTO `menus` (`name`, `description`, `access_id`, `created_at`, `updated_at`) VALUES ('home', 'menu item', 777, '2015-06-23 20:23:20', '2015-06-23 20:23:20')[0m
+  [1m[35m (53.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `menus` (`name`, `description`, `access_id`, `created_at`, `updated_at`) VALUES ('tools', 'menu item', 777, '2015-06-23 20:23:20', '2015-06-23 20:23:20')
+  [1m[36m (40.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `menus` (`name`, `description`, `access_id`, `created_at`, `updated_at`) VALUES ('profile', 'menu item', 777, '2015-06-23 20:23:20', '2015-06-23 20:23:20')[0m
+  [1m[35m (41.3ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (9.8ms)[0m  INSERT INTO `sub_menus` (`name`, `created_at`, `updated_at`) VALUES ('add', '2015-06-23 20:23:21', '2015-06-23 20:23:21')
+  [1m[36m (58.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `sub_menus` (`name`, `created_at`, `updated_at`) VALUES ('inventory', '2015-06-23 20:23:21', '2015-06-23 20:23:21')[0m
+  [1m[35m (41.0ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `menus` (`name`, `description`, `access_id`, `created_at`, `updated_at`) VALUES ('home', 'menu item', 777, '2015-06-23 20:34:09', '2015-06-23 20:34:09')[0m
+  [1m[35m (41.8ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `menus` (`name`, `description`, `access_id`, `created_at`, `updated_at`) VALUES ('tools', 'menu item', 777, '2015-06-23 20:34:09', '2015-06-23 20:34:09')
+  [1m[36m (31.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `menus` (`name`, `description`, `access_id`, `created_at`, `updated_at`) VALUES ('profile', 'menu item', 777, '2015-06-23 20:34:09', '2015-06-23 20:34:09')[0m
+  [1m[35m (31.7ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (25.3ms)[0m  INSERT INTO `sub_menus` (`name`, `created_at`, `updated_at`) VALUES ('add', '2015-06-23 20:34:09', '2015-06-23 20:34:09')
+  [1m[36m (53.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `sub_menus` (`name`, `created_at`, `updated_at`) VALUES ('inventory', '2015-06-23 20:34:09', '2015-06-23 20:34:09')[0m
+  [1m[35m (41.3ms)[0m  COMMIT
+  [1m[36mMenu Load (59.2ms)[0m  [1mSELECT `menus`.* FROM `menus` WHERE `menus`.`name` = 'home'[0m
+  [1m[35mMenu Load (0.5ms)[0m  SELECT `menus`.* FROM `menus` WHERE `menus`.`name` = 'homea'
+  [1m[36mMenu Load (0.2ms)[0m  [1mSELECT `menus`.* FROM `menus` WHERE `menus`.`name` = 'home'[0m
+  [1m[35mMenu Load (0.6ms)[0m  SELECT `menus`.* FROM `menus` WHERE (name = 'home')
+  [1m[36mMenu Load (55.8ms)[0m  [1mSELECT `menus`.* FROM `menus` WHERE (name = 'home' OR access_id = 777)[0m
+  [1m[35mMenu Load (15.9ms)[0m  SELECT `menus`.* FROM `menus` WHERE (name = 'home' OR access_id != 777)
+  [1m[36mMenu Load (1.0ms)[0m  [1mSELECT `menus`.* FROM `menus` WHERE (name = 'home' OR access_id  777)[0m
+Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '777)' at line 1: SELECT `menus`.* FROM `menus` WHERE (name = 'home' OR access_id  777)
+  [1m[35mMenu Load (0.2ms)[0m  SELECT `menus`.* FROM `menus` WHERE (name = 'home' OR access_id = 777)
+  [1m[36mMenu Load (27.3ms)[0m  [1mSELECT `menus`.* FROM `menus` WHERE (name = 'home' AND access_id = 777)[0m
+  [1m[35mMenu Load (0.7ms)[0m  SELECT `menus`.* FROM `menus` WHERE (name = 'homea' AND access_id = 777)
+  [1m[36mMenu Load (9.3ms)[0m  [1mSELECT `menus`.* FROM `menus` WHERE (name = 'home' AND access_id = 747)[0m
+  [1m[35mMenu Load (0.2ms)[0m  SELECT `menus`.* FROM `menus` WHERE (name = 'home' AND access_id = 777)
+  [1m[36mMenu Load (25.7ms)[0m  [1mSELECT `menus`.* FROM `menus` WHERE (name = 'home' AND access_id LIKE '%777%')[0m
+  [1m[35mMenu Load (0.6ms)[0m  SELECT `menus`.* FROM `menus` WHERE (name = 'home' AND access_id LIKE '%77%')
+  [1m[36mMenu Load (0.6ms)[0m  [1mSELECT `menus`.* FROM `menus` WHERE (name = 'home' AND access_id LIKE '%7%')[0m
+  [1m[35mMenu Load (0.6ms)[0m  SELECT `menus`.* FROM `menus` WHERE (access_id LIKE '%7%')
+  [1m[36mMenu Load (0.5ms)[0m  [1mSELECT `menus`.* FROM `menus` WHERE (access_id LIKE '%8%')[0m
+  [1m[35mMenu Load (0.6ms)[0m  SELECT `menus`.* FROM `menus` WHERE (name LIKE 'home')
+  [1m[36mMenu Load (0.3ms)[0m  [1mSELECT `menus`.* FROM `menus` WHERE (name LIKE 'home')[0m
+  [1m[35mMenu Load (0.3ms)[0m  SELECT `menus`.* FROM `menus` WHERE (name LIKE 'home')
+  [1m[36mMenu Load (0.3ms)[0m  [1mSELECT `menus`.* FROM `menus` WHERE (name LIKE 'home')[0m
+  [1m[35mMenu Load (0.7ms)[0m  SELECT  `menus`.* FROM `menus`  ORDER BY `menus`.`id` ASC LIMIT 1
+  [1m[36mSubMenu Load (9.6ms)[0m  [1mSELECT `sub_menus`.* FROM `sub_menus` WHERE `sub_menus`.`menu_id` = 8  ORDER BY id DESC[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (27.2ms)[0m  [1mINSERT INTO `sub_menus` (`name`, `menu_id`, `created_at`, `updated_at`) VALUES ('test', 8, '2015-06-23 22:16:37', '2015-06-23 22:16:37')[0m
+  [1m[35m (51.4ms)[0m  COMMIT
+  [1m[36mSubMenu Load (0.6ms)[0m  [1mSELECT `sub_menus`.* FROM `sub_menus` WHERE `sub_menus`.`menu_id` = 8  ORDER BY id DESC[0m
+  [1m[36mMenu Load (0.6ms)[0m  [1mSELECT `menus`.* FROM `menus`  ORDER BY menus.name[0m
+  [1m[36mMenu Load (0.4ms)[0m  [1mSELECT `menus`.* FROM `menus` WHERE (menus.name = 'home')[0m

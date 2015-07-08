@@ -1,0 +1,1 @@
+json.extract! @menu, :id, :name, :access_id, :description

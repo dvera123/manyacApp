@@ -6,10 +6,16 @@ class Menu < ActiveRecord::Base
 
   #default_scope lambda { order('menus.name') }
 
+  after_create :wait
+
   scope :home, lambda {where("menus.name = 'home'")}
 
   def menu_description
     "#{name} - #{description}"
+  end
+
+  def wait
+  	puts "we will see you #{name}"
   end
 
 end

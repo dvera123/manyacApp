@@ -1,0 +1,29 @@
+<p class="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @menu.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @menu.description %>
+</p>
+
+<p>
+  <strong>Access ID:</strong>
+  <%= @menu.access_id %>
+</p>
+
+<div>
+
+</div>
+<div>
+	
+	<%= link_to "new submenu", new_menu_sub_menu_path(@menu, :format => :js),
+:remote => true, :id => 'new_submenu_link' %>
+</div>
+
+<div id="submenus"></div>
+
+<%= link_to 'Back', menus_path %>

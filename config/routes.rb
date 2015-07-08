@@ -1,4 +1,20 @@
 Rails.application.routes.draw do
+  
+
+  get 'menus/list' => 'menus#list'
+
+  resources :users
+
+  resources :menus do
+    resources :sub_menus
+  end
+
+  resource :session, :only => [:new, :create, :destroy]
+  get '/login' => 'sessions#new', :as => 'login'
+  get '/logout' => 'sessions#destroy', :as => 'logout'
+
+  root :to => 'home#index'
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -53,7 +69,5 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-    ManiacApp::Application.routes.draw do
-        get ':controller(/:action(/:id(.:format)))'
-    end
+    
 end

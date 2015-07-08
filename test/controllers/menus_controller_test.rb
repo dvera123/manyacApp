@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class ProfileControllerTest < ActionController::TestCase
+class MenuControllerTest < ActionController::TestCase
   # test "the truth" do
   #   assert true
   # end

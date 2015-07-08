@@ -1,0 +1,19 @@
+<table>
+	<thead>
+		<tr>
+			<th>name</th>
+			<th>description</th>
+			<th>menu id</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% for @item in @menu.sub_menus %>
+		<tr>
+			<td><%= @item.name %></td>
+			<td><%= @item.description %></td>
+			<td><%= @item.menu_id %></td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>
+

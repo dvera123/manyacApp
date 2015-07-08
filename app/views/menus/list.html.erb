@@ -1,0 +1,22 @@
+<h1>Menu Page</h1>
+<table>
+	<thead>
+		<tr>
+			<th>name</th>
+			<th>description</th>
+			<th>acess id</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% for @item in @menus %>
+		<tr>
+			<td><%= @item.name %></td>
+			<td><%= @item.description %></td>
+			<td><%= @item.access_id %></td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>
+
+
+		
